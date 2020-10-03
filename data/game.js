@@ -6,11 +6,17 @@ class Game {
         this.users = [];
         this.currentRound = null;
         this.currentRoundId = 0;
+        this.nextRoundStarter = this.users[0];
     }
 
 
     startNewRound(){
-        this.currentRound = new Round(this.currentRoundId++); //Set round id and add 1 for next round.
+        let aliveUsers = 0;
+        this.users.forEach(user =>{
+            if(user.health>0) aliveUsers++;
+        });
+        let loser = this.nextRoundStarter;
+        this.currentRound = new Round(this.currentRoundId++, loser, aliveUsers); //Set round id and add 1 for next round.
         this.currentRound.startRound(this.users);
     }
 
