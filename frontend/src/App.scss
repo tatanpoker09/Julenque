@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+}
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.opponents {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.MainBoard {
+  background-color: #dde0e5;
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.PlayerName {
+  height: 80px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #dde0e5;
+  padding: 20px 30px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MainPlayerName {
+  box-sizing: border-box;
+  border-bottom: 2px solid #dde0e5;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  margin: 10px auto 0;
+  padding: 0 0 10px;
+  justify-content: center;
+}
+
+.GameDice {
+  height: 46px;
+  width: 46px;
+  background-color: white;
+  margin: 0 20px;
+  border-radius: 3px;
+}
+.GameDiceImage {
+  padding: 3px;
+}
+
+.PlayerDices {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ValueSelector {
+  width: 80px;
+}
+.Padding-10 {
+  padding: 10px;
+}
+.VerticalFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HorizontalFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Arrow:hover {
+  -webkit-filter: drop-shadow( 0 0 4px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 0 0 4px rgba(0, 0, 0, .7));
+  cursor: pointer;
+}
+.Arrow:active {
+  -webkit-filter: drop-shadow( 0 0 4px rgba(255, 255, 255, .7));
+  filter: drop-shadow( 0 0 4px rgba(255, 255, 255, .7));
+}
+.DownArrow {
+  transform: rotate(180deg);
+}
+.Value p {
+  font-size: 40px;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+
+.MainPlayerBoard {
+  background-color: #282c34;
+  border: white solid 3px ;
+  border-radius: 5px;
+  display: flex;
+  padding: 40px;
+}
+
+.MainPlayerOptions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Button {
+  background: white;
+  border: white solid 3px;
+  color: #282c34;
+  border-radius: 3px;
+  font: inherit;
+  cursor: pointer;
+  outline: #282c34 solid 3px;
+}
+
+.Options {
+  padding: 0 30px;
+  margin: 3px 0;
+}
+
+.Play {
+  width: 60px;
+  margin: 3px 0;
+}
+
+.Button:hover {
+  background-color: #282c34;
+  color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
