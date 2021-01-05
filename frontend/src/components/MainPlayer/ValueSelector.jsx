@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Arrow from '../../assets/Arrow.svg';
 
 
-const values = {
+const betValues = {
   1: '1',
   2: '2',
   3: '3',
@@ -23,13 +23,13 @@ const values = {
   18: '6-6',
 
 }
-function ValueSelector({value, setValue}) {
+function ValueSelector({betValue, setBetValue}) {
 
   const handleArrow = (up) => {
-    if (up && value < 18) {
-      setValue(value + 1);
-    } else if (!up && value > 1) {
-      setValue(value - 1);
+    if (up && betValue < 18) {
+      setBetValue(betValue + 1);
+    } else if (!up && betValue > 1) {
+      setBetValue(betValue - 1);
     }
   }
 
@@ -38,7 +38,7 @@ function ValueSelector({value, setValue}) {
     <div className={'Padding-10 HorizontalFlex'}>
       <div className={'ValueSelector Padding-10 VerticalFlex'} >
         <img className={'Arrow'} onClick={() => handleArrow(true)} src={Arrow}/>
-        <div className={'Value'}> <p>{values[value]}</p> </div>
+        <div className={'Value'}> <p>{betValues[betValue]}</p> </div>
         <img className={'Arrow DownArrow'} onClick={() => handleArrow(false)} src={Arrow}/>
       </div>
       <div className={'Padding-10 VerticalFlex'}>
