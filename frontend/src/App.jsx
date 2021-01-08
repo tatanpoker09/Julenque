@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
-import MainPlayer from './components/MainPlayer/MainPlayer';
-import MainBoard from './components/MainBoard';
-import PlayerName from './components/PlayerName';
+import MainPlayer from './components/Game/MainPlayer/MainPlayer';
+import MainBoard from './components/Game/MainBoard';
+import PlayerName from './components/Game/PlayerName';
 
 
 function App() {
