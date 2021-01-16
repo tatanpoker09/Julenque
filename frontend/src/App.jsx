@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
-import MainPlayer from './components/Game/MainPlayer/MainPlayer';
-import MainBoard from './components/Game/MainBoard';
-import PlayerName from './components/Game/PlayerName';
+import Game from './components/Game/Game';
+import Lobby from "./components/Lobby/Lobby";
 
 
 function App() {
   const [players, setPlayers] = useState([]);
   const [loaded, setLoaded] = useState(false);
+  const [inGame, setInGame ] = useState(false);
 
   useEffect(() => {
     if (!loaded){
@@ -35,20 +35,8 @@ function App() {
         <div className="Centered"> <h1>Julenque</h1> </div>
       </header>
       <div className="main">
-        <div className="opponents">
-          <div className="playercol">
-            {players.slice(0, 5).map((player, i) =>
-              <PlayerName player={player} key={i}/>
-            )}
-          </div>
-          <MainBoard players={players}/>
-          <div className="playercol">
-            {players.slice(5).map((player, i) =>
-              <PlayerName player={player} key={i + 5}/>
-            )}
-          </div>
-        </div>
-        <MainPlayer/>
+        {inGame?<Game players={players}/>:<Lobby/>}
+
       </div>
     </div>
   );
