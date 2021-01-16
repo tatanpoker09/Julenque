@@ -11,4 +11,3 @@ package-lock.json
 # Editor-based HTTP Client requests
 /httpRequests/
 /.idea/workspace.xml
-frontend/src/components/Lobby/Lobby.jsx
