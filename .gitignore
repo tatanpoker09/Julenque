@@ -1,2 +1,13 @@
 node_modules/
 package-lock.json
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/Julenque.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+
+# Default ignored files
+/shelf/
+# Editor-based HTTP Client requests
+/httpRequests/
+/.idea/workspace.xml
