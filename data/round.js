@@ -1,6 +1,6 @@
-import {ROUND_HEALTH_LOSS} from "./constants";
+const {ROUND_HEALTH_LOSS} = require("./constants");
 
-export default class Round {
+class Round {
     constructor(roundId, startingUser, userCount) {
         this.roundId = roundId;
         this.lastUser = null;
@@ -176,3 +176,5 @@ export default class Round {
         this.status = "ENDED";
     }
 }
+
+module.exports = Round;
