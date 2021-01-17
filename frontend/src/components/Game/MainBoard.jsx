@@ -1,14 +1,10 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Dice from "./Dice";
 
 
 
 
 function MainBoard({ players }) {
-  useEffect(()=> {
-    console.log(players)
-  }, [players])
-
 
   return(
     <div className={'MainBoard'}>

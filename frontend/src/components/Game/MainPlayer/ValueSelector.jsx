@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Arrow from '../../assets/Arrow.svg';
-import { BET_VALUES, MIN_VALUE, MID_VALUE, MAX_VALUE } from '../../config/betValues.json';
+import Arrow from '../../../assets/Arrow.svg';
+import { BET_VALUES, MIN_VALUE, MID_VALUE, MAX_VALUE } from '../../../config/betValues.json';
 
 
 function ValueSelector({betValue, setBetValue}) {
