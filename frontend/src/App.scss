@@ -30,6 +30,11 @@
   color: #61dafb;
 }
 
+.Centered {
+  display: flex;
+  align-items: center;
+}
+
 .opponents {
   display: flex;
   justify-content: flex-start;
@@ -167,6 +172,10 @@
 .Button:hover {
   background-color: #282c34;
   color: white;
+}
+
+.Clickable:hover {
+  cursor: pointer;
 }
 
 

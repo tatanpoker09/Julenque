@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
 import Game from './components/Game/Game';
-import Lobby from "./components/Lobby/Lobby";
+import LanderPage from "./components/LanderPage/LanderPage";
+import ExitButtonImage from '../src/assets/Exit.png'
 
 
 function App() {
   const [players, setPlayers] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const [inGame, setInGame ] = useState(false);
+
+
+  const handleExitGame = () => {
+    if (window.confirm('¿Estás seguro de querer salir?')) setInGame(false);
+  }
 
   useEffect(() => {
     if (!loaded){
@@ -32,10 +38,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="Centered"> <h1>Julenque</h1> </div>
+        <div className="Centered">
+
+          <h1>Julenque</h1>
+          {inGame?
+              <div className={'GameDice Clickable'} onClick={handleExitGame}>
+                <img className={'GameDiceImage'} src={ExitButtonImage}/>
+              </div>
+
+            :
+            null
+          }
+        </div>
+
       </header>
       <div className="main">
-        {inGame?<Game players={players}/>:<Lobby/>}
+        {inGame?<Game players={players}/>:<LanderPage players={players} setPlayers={setPlayers} setInGame={setInGame}/>}
 
       </div>
     </div>

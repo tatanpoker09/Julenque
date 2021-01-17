@@ -1,0 +1,53 @@
+.LanderButton{
+    margin: 0 20px;
+    font-size: larger;
+}
+.mdContent{
+    width: 80vh;
+    margin: 30px auto;
+    text-align: left;
+    background-color: white;
+    color: #282c34;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.Row {
+    padding: 20px;
+}
+
+.InputLabel{
+    font-size: inherit ;
+}
+
+.Vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text]{
+    background-color: #282c34;
+    color: white;
+    border: 4px solid;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: calc(10px + 5vmin);
+}
+.InputCode {
+    width: 200px;
+    text-transform: uppercase;
+}
+
+.InputName {
+    width: 400px;
+}
+
+.PlayerList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto 40px;
+}
