@@ -51,31 +51,31 @@ function LanderPage({ players, setPlayers, setInGame }) {
         'LandingPage':
           <div>
             <div className={'GameButtons'}>
-              <button className={'Button LanderButton'} onClick={handleJoinGame}>Unirse a juego</button>
-              <button className={'Button LanderButton'} onClick={handleNewGame}>Nuevo juego</button>
+              <button className={'Button landerButton'} onClick={handleJoinGame}>Unirse a juego</button>
+              <button className={'Button landerButton'} onClick={handleNewGame}>Nuevo juego</button>
             </div>
             <Readme/>
           </div>,
         'GameTransition':
           <div>
             { joinCondition === 'JoinGame'?
-              <div className={'Row Vertical'}>
-                <label className={'InputLabel'}>Código:</label>
+              <div className={'row vertical'}>
+                <label className={'inputLabel'}>Código:</label>
                 <input
                   type={'text'}
-                  className={'InputCode'}
+                  className={'inputCode'}
                   maxLength={CODE_LENGTH}
                   onChange={(event) => setCode(event.target.value)}
                 />
               </div>: null
             }
-            <div className={'Row Vertical'}>
-              <label className={'InputLabel'}>Nombre de usuario:</label>
-              <input className={'InputName'} maxLength={MAX_NAME_LENGTH} type={'text'}/>
+            <div className={'row vertical'}>
+              <label className={'inputLabel'}>Nombre de usuario:</label>
+              <input className={'inputName'} maxLength={MAX_NAME_LENGTH} type={'text'}/>
             </div>
-            <div className={'Row'}>
-              <button className={'Button LanderButton'} onClick={handleGameLobby}>Jugar</button>
-              <button className={'Button LanderButton'} onClick={handleCancel}>Cancelar</button>
+            <div className={'row'}>
+              <button className={'Button landerButton'} onClick={handleGameLobby}>Jugar</button>
+              <button className={'Button landerButton'} onClick={handleCancel}>Cancelar</button>
             </div>
           </div>,
         'Lobby':

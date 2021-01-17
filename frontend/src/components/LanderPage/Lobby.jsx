@@ -7,13 +7,13 @@ function Lobby({ handleCancel, players, setPlayers, handlePlay, code}) {
     <div>
       <p>Código:</p>
       <h1>{code}</h1>
-      <div className={'PlayerList'}>
+      <div className={'playerList'}>
         {players.map((player, index) =>
           <PlayerNameLobby player={player} id={index}/>
         )}
       </div>
-      <button className={'Button LanderButton'} onClick={handlePlay}>Iniciar Juego</button>
-      <button className={'Button LanderButton'} onClick={handleCancel}>Salir</button>
+      <button className={'Button landerButton'} onClick={handlePlay}>Iniciar Juego</button>
+      <button className={'Button landerButton'} onClick={handleCancel}>Salir</button>
     </div>
   );
 }
