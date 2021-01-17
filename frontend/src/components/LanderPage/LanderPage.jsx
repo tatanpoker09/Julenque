@@ -51,8 +51,8 @@ function LanderPage({ players, setPlayers, setInGame }) {
         'LandingPage':
           <div>
             <div className={'GameButtons'}>
-              <button className={'Button landerButton'} onClick={handleJoinGame}>Unirse a juego</button>
-              <button className={'Button landerButton'} onClick={handleNewGame}>Nuevo juego</button>
+              <button className={'button landerButton'} onClick={handleJoinGame}>Unirse a juego</button>
+              <button className={'button landerButton'} onClick={handleNewGame}>Nuevo juego</button>
             </div>
             <Readme/>
           </div>,
@@ -74,8 +74,8 @@ function LanderPage({ players, setPlayers, setInGame }) {
               <input className={'inputName'} maxLength={MAX_NAME_LENGTH} type={'text'}/>
             </div>
             <div className={'row'}>
-              <button className={'Button landerButton'} onClick={handleGameLobby}>Jugar</button>
-              <button className={'Button landerButton'} onClick={handleCancel}>Cancelar</button>
+              <button className={'button landerButton'} onClick={handleGameLobby}>Jugar</button>
+              <button className={'button landerButton'} onClick={handleCancel}>Cancelar</button>
             </div>
           </div>,
         'Lobby':

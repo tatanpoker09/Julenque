@@ -7,11 +7,11 @@ function MainPlayerOptions() {
 
 
   return(
-    <div className={'MainPlayerOptions'}>
-      <button className={'Button Options'}> Julenque </button>
-      <button className={'Button Options'}> Aleatorio </button>
-      <button className={'Button Options'}> Paso </button>
-      <button className={'Button Options'}> Reportar </button>
+    <div className={'mainPlayerOptions'}>
+      <button className={'button options'}> Julenque </button>
+      <button className={'button options'}> Aleatorio </button>
+      <button className={'button options'}> Paso </button>
+      <button className={'button options'}> Reportar </button>
     </div>
 
   )

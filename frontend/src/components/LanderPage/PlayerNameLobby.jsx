@@ -7,9 +7,9 @@ function PlayerNameLobby({ player }) {
 
 
   return(
-    <div className={'PlayerName'}>
+    <div className={'playerName'}>
       <p>{player.name}</p>
-      <button className={'Button'}>Expulsar</button>
+      <button className={'button'}>Expulsar</button>
     </div>
   )
 }

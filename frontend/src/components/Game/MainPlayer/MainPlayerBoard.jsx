@@ -7,7 +7,7 @@ function MainPlayerBoard({dices}) {
 
 
   return(
-    <div className={'MainPlayerBoard'}>
+    <div className={'mainPlayerBoard'}>
       <Dice number={dices.dice1}/>
       <Dice number={dices.dice2}/>
     </div>
