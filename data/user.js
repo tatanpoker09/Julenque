@@ -2,7 +2,7 @@ import {INITIAL_HEALTH} from "./constants";
 import round from "./round";
 
 
-class User {
+export default class User {
     constructor(name) {
         this.name = name;
         this.health = INITIAL_HEALTH;
@@ -159,5 +159,9 @@ class User {
         } else {
             console.log("Invalid numbers_array value");
         }
+    }
+
+    setGameID(game_id) {
+        this.game_id = game_id;
     }
 }

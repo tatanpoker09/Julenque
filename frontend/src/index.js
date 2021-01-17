@@ -2,10 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+
+
+
+import RoomView from "./components/Room/RoomView";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Router>
+          <Switch>
+              <Route exact path={"/lobby"}>
+                  <RoomView/>
+              </Route>
+              <Route path={"/"}>
+                  <App />
+              </Route>
+          </Switch>
+      </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

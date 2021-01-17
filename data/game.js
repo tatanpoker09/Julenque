@@ -1,6 +1,6 @@
-import Round from "./round";
+const Round = require("./round");
 
-class Game {
+ class Game {
     constructor() {
         //CREATE ID
         this.users = [];
@@ -40,3 +40,5 @@ class Game {
         return false;
     }
 }
+
+module.exports = Game;
