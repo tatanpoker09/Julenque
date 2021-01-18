@@ -1,4 +1,4 @@
-.LanderButton{
+.landerButton{
     margin: 0 20px;
     font-size: larger;
 }
@@ -12,15 +12,15 @@
     border-radius: 5px;
 }
 
-.Row {
+.row {
     padding: 20px;
 }
 
-.InputLabel{
+.inputLabel{
     font-size: inherit ;
 }
 
-.Vertical {
+.vertical {
     display: flex;
     flex-direction: column;
 }
@@ -34,16 +34,16 @@ input[type=text]{
     text-align: center;
     font-size: calc(10px + 5vmin);
 }
-.InputCode {
+.inputCode {
     width: 200px;
     text-transform: uppercase;
 }
 
-.InputName {
+.inputName {
     width: 400px;
 }
 
-.PlayerList {
+.playerList {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

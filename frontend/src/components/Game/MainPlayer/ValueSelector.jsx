@@ -23,7 +23,7 @@ function ValueSelector({betValue, setBetValue}) {
           break;
         case 's':
         case 'ArrowDown':
-          document.getElementById("DownArrow").click();
+          document.getElementById("downArrow").click();
           break;
         case 'a':
         case 'ArrowLeft':
@@ -55,15 +55,15 @@ function ValueSelector({betValue, setBetValue}) {
   }, [betValue]);
 
   return(
-    <div className={'Padding-10 HorizontalFlex'}>
-      <div className={'ValueSelector Padding-10 VerticalFlex'} >
-        <img id={"UpArrow"} className={'Arrow'} onClick={() => handleArrow(true)} src={Arrow}/>
-        <div className={'Value'}> <p>{BET_VALUES[betValue]}</p> </div>
-        <img id={"DownArrow"} className={'Arrow DownArrow'} onClick={() => handleArrow(false)} src={Arrow}/>
+    <div className={'padding-10 horizontalFlex'}>
+      <div className={'valueSelector padding-10 verticalFlex'} >
+        <img id={"UpArrow"} className={'arrow'} onClick={() => handleArrow(true)} src={Arrow}/>
+        <div className={'value'}> <p>{BET_VALUES[betValue]}</p> </div>
+        <img id={"downArrow"} className={'arrow downArrow'} onClick={() => handleArrow(false)} src={Arrow}/>
       </div>
-      <div className={'Padding-10 VerticalFlex'}>
-        <button id="OkButton" className={'Button Play'}>Ok</button>
-        <button className={'Button Play'}>Dudo</button>
+      <div className={'padding-10 verticalFlex'}>
+        <button id="OkButton" className={'button mainActionButton'}>Ok</button>
+        <button className={'button mainActionButton'}>Dudo</button>
       </div>
     </div>
 

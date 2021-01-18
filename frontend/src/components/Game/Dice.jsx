@@ -22,8 +22,8 @@ function Dice({number}) {
 
 
   return(
-    <div className={'GameDice'}>
-      <img className={'GameDiceImage'} src={dices[number]}/>
+    <div className={'gameDice'}>
+      <img className={'gameDiceImage'} src={dices[number]}/>
     </div>
   )
 }

@@ -36,14 +36,14 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="Centered">
+    <div className="app">
+      <header className="appHeader">
+        <div className="centered">
 
           <h1>Julenque</h1>
           {inGame?
-              <div className={'GameDice Clickable'} onClick={handleExitGame}>
-                <img className={'GameDiceImage'} src={ExitButtonImage}/>
+              <div className={'gameDice clickable'} onClick={handleExitGame}>
+                <img className={'gameDiceImage'} src={ExitButtonImage}/>
               </div>
 
             :

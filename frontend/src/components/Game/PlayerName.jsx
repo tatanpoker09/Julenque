@@ -8,7 +8,7 @@ function PlayerName({ player }) {
 
 
   return(
-    <div className={'PlayerName'}>
+    <div className={'playerName'}>
       <p>{player.name}</p>
       <Dice number={player.life}/>
     </div>

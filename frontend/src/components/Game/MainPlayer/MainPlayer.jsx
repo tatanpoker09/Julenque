@@ -13,7 +13,7 @@ function MainPlayer() {
 
   return(
     <>
-      <div className={'MainPlayer'}>
+      <div className={'mainPlayer'}>
         <ValueSelector betValue={betValue} setBetValue={setBetValue} />
         <MainPlayerBoard dices={player.dices}/>
         <MainPlayerOptions/>
