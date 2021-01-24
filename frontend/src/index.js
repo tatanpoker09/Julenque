@@ -1,30 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App.jsx';
+import Room from './App.jsx';
 import {
-    BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    BrowserRouter
 } from "react-router-dom";
 
 
-
-import RoomView from "./components/Room/RoomView";
+import LanderPage from "./components/LanderPage/LanderPage";
 
 ReactDOM.render(
-  <React.StrictMode>
-      <Router>
+  <BrowserRouter>
           <Switch>
-              <Route exact path={"/lobby"}>
-                  <RoomView/>
-              </Route>
-              <Route path={"/"}>
-                  <App />
-              </Route>
+              <Route exact path={"/lobby"} component={LanderPage}/>
+              <Route path={"/:game"} component={Room}/>
           </Switch>
-      </Router>
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

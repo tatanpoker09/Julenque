@@ -9,13 +9,14 @@ var usersRouter = require('./routes/users');
 const swaggerUI = require('swagger-ui-express');
 const swaggerFile = require('./swagger_output.json')
 var gamesRouter = require('./routes/game');
+const cors = require("cors");
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-
+app.use(cors());
 
 app.use(logger('dev'));
 app.use(express.json());

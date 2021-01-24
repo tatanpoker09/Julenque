@@ -1,8 +1,8 @@
-import {INITIAL_HEALTH} from "./constants";
-import round from "./round";
+const {INITIAL_HEALTH} = require("./constants");
+const round = require("./round");
 
 
-export default class User {
+module.exports = class User {
     constructor(name) {
         this.name = name;
         this.health = INITIAL_HEALTH;

@@ -10,7 +10,7 @@ class GameManager{
         let generatedId;
         do {
             generatedId = this.generateGameID(4);
-        } while (generatedId in game);
+        } while (generatedId in this.games);
 
         this.games[generatedId] = game;
         return generatedId;
