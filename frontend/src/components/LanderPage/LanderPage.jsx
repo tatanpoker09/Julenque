@@ -51,7 +51,7 @@ class LanderPage extends React.Component{
       createNewRoom(this.state.name).then(response => {
         this.setState({code: response.data}, () => {
             if (this.state.code.length === 4) {
-              this.setState({LandingPageState: "Lobby"});
+              this.props.history.push(`/${this.state.code}?name=${this.state.name}`)
             } else {
               alert('Ingresa un código')
             }
@@ -97,9 +97,7 @@ class LanderPage extends React.Component{
                         <button className={'Button LanderButton'} onClick={this.handleGameLobby}>Jugar</button>
                         <button className={'Button LanderButton'} onClick={this.handleCancel}>Cancelar</button>
                       </div>
-                    </div>,
-                'Lobby':
-                    <Lobby handleCancel={this.handleCancel} handlePlay={this.handlePlay} code={this.state.code} name={this.state.name}/>
+                    </div>
               }[this.state.LandingPageState]
             }
           </>

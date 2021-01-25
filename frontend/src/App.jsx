@@ -2,19 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './App.scss';
 import Game from './components/Game/Game';
 import {useLocation, useParams} from "react-router";
+import Lobby from "./components/LanderPage/Lobby";
+import NameInput from "./components/Game/NameInput";
 
-
-function Room(props) {
-    const {match} = props;
+function Room() {
     let {game} = useParams();
     let query = useQuery();
-
-    const name = query.get("name");
-    if(name===undefined){
-        alert("There's no name.")
-    } else {
-
-    }
+    let started = false;
+    const [name, setName] = useState(query.get("name"));
 
   const players = [
     {name: 'Diego', life:1, dices: {dice1: null, dice2: null}},
@@ -31,8 +26,16 @@ function Room(props) {
         return new URLSearchParams(useLocation().search);
     }
 
+    function enterName(nameInput){
+        setName(nameInput);
+    }
+
   return (
-      <Game players={players}/>
+      name?
+      started?
+        <Game players={players}/>
+      : <Lobby code={game} name={name}/>
+      : <NameInput  enterName={enterName}/>
   );
 }
 

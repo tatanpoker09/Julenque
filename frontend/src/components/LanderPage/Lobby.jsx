@@ -17,6 +17,7 @@ function Lobby({ handleCancel, handlePlay, code, name}) {
                         <PlayerNameLobby player={player}  key={player.name} id={index}/>
                     )}
                 </div>
+                
                 <button className={'Button LanderButton'} onClick={handlePlay}>Iniciar Juego</button>
                 <button className={'Button LanderButton'} onClick={handleCancel}>Salir</button>
             </div>

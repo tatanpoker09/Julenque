@@ -2,7 +2,7 @@
 import {io} from "socket.io-client";
 import {useEffect, useRef, useState} from "react";
 import {getPlayers} from "./roomService";
-const ENDPOINT = "http://localhost";
+const ENDPOINT = "https://localhost";
 const PLAYER_JOINED_EVENT = "player-join";
 
 export function initializeSocket(code,name){
