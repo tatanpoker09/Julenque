@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
+    "start": "node bin/www.js",
+    "dev": "nodemon bin/www.js",
     "swagger-autogen": "node docs/swagger.js"
   },
   "engines": {
@@ -28,6 +28,7 @@
     "@babel/preset-env": "^7.12.11",
     "babel-cli": "^6.0.0",
     "babel-preset-es2015": "^6.0.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "socket.io": "^3.1.0"
   }
 }

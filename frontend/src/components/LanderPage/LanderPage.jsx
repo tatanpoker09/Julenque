@@ -4,7 +4,8 @@ import {CODE_LENGTH, MAX_NAME_LENGTH} from '../../config/generalValues.json';
 import Lobby from "./Lobby";
 import {createNewRoom, joinRoom} from "../../services/roomService";
 
-require('./LanderPage.scss');
+import "./LanderPage.scss"
+import '../../App.scss';
 
 
 
@@ -47,7 +48,7 @@ class LanderPage extends React.Component{
 
   handleGameLobby(){
     if(this.state.JoinCondition==='NewGame') {
-      createNewRoom().then(response => {
+      createNewRoom(this.state.name).then(response => {
         this.setState({code: response.data}, () => {
             if (this.state.code.length === 4) {
               this.setState({LandingPageState: "Lobby"});
@@ -57,11 +58,7 @@ class LanderPage extends React.Component{
           });
         });
       } else if(this.state.JoinCondition==='JoinGame'){
-
-        this.props.history.push({
-          pathname: `/${this.state.code}?name=${this.state.name}`,
-        });
-        //joinRoom(this.state.code, this.state.name);
+        this.setState({LandingPageState: "Lobby"});
       }
     }
 
@@ -102,7 +99,7 @@ class LanderPage extends React.Component{
                       </div>
                     </div>,
                 'Lobby':
-                    <Lobby handleCancel={this.handleCancel} handlePlay={this.handlePlay} code={this.state.code}/>
+                    <Lobby handleCancel={this.handleCancel} handlePlay={this.handlePlay} code={this.state.code} name={this.state.name}/>
               }[this.state.LandingPageState]
             }
           </>

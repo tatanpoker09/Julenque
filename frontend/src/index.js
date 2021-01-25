@@ -7,16 +7,26 @@ import {
     Route,
     BrowserRouter
 } from "react-router-dom";
+import './App.scss';
 
 
 import LanderPage from "./components/LanderPage/LanderPage";
 
 ReactDOM.render(
   <BrowserRouter>
-          <Switch>
-              <Route exact path={"/lobby"} component={LanderPage}/>
-              <Route path={"/:game"} component={Room}/>
-          </Switch>
+      <div className="App">
+          <header className="App-header">
+              <div className="Centered">
+                  <h1>Julenque</h1>
+              </div>
+          </header>
+          <div className="main">
+              <Switch>
+                  <Route exact path={"/lobby"} component={LanderPage}/>
+                  <Route path={"/:game"} component={Room}/>
+              </Switch>
+          </div>
+      </div>
   </BrowserRouter>,
   document.getElementById('root')
 );

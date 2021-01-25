@@ -32,17 +32,7 @@ function Room(props) {
     }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="Centered">
-          <h1>Julenque</h1>
-        </div>
-
-      </header>
-      <div className="main">
-        <Game players={players}/>
-      </div>
-    </div>
+      <Game players={players}/>
   );
 }
 

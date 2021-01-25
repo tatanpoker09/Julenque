@@ -1,0 +1,23 @@
+version: "3.1"
+
+services:
+  backend:
+    container_name: julenque-backend
+    build: ./backend
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: julenque-frontend
+
+  live-reloader:
+    image: apogiatzis/livereloading
+    container_name: livereloader
+    privileged: true
+    environment:
+      - RELOAD_DELAY=1.5              # seconds
+      - RELOAD_CONTAINER=frontend
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - ./frontend:/frontend

@@ -3,6 +3,7 @@ Amount of dices, then returns stuff
  */
 class Dice{
     constructor() {
+
     }
 
     /**
@@ -24,3 +25,5 @@ class Dice{
         return Math.random() * (max - min) + min;
     }
 }
+
+module.exports = {Dice};
