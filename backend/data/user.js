@@ -69,7 +69,7 @@ module.exports = class User {
      * @param publicUserData
      */
     sendPublicData(publicUserData){
-
+        this.socket.emit('public-data', publicUserData);
     }
 
     /**
@@ -78,7 +78,7 @@ module.exports = class User {
      */
     sendPrivateData(){
         let privateData = this.getPrivateUserData();
-
+        this.socket.emit('private-data', privateData);
     }
 
     /**
@@ -101,7 +101,7 @@ module.exports = class User {
         this.updatePowerups(dice);
         return {"privateData": {
                 "name": this.name, //Just to make sure we're sending to the correct user.
-                "dice": this.dice,
+                "dice": dice,
                 "powerups": this.powerups
             }
         }
@@ -142,7 +142,7 @@ module.exports = class User {
      * @param dice_values - Uses values of dice.
      */
     updatePowerups(dice_values){
-        let numbers_array = dice_values.dices;
+        let numbers_array = dice_values;
         if(numbers_array.length === 2){
             if(numbers_array[0] === 1 && numbers_array[1] === 2 || numbers_array[0] === 2 && numbers_array[1] === 1){
                 //Tenemos julenque

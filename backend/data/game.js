@@ -6,7 +6,9 @@ const Round = require("./round");
         this.users = [];
         this.currentRound = null;
         this.currentRoundId = 0;
+        this.connectedUsers = 0;
         this.nextRoundStarter = this.users[0];
+        this.status = "LOBBY";
     }
 
 
@@ -20,6 +22,24 @@ const Round = require("./round");
         this.currentRound.startRound(this.users);
     }
 
+    setStatus(value){
+        this.status = value;
+    }
+
+    userConnected(name, socket){
+        this.users.forEach((user)=>{
+            if(user.name===name){
+                user.connected = true;
+                socket.user = user;
+                user.socket = socket;
+                this.connectedUsers++;
+                if(this.connectedUsers===this.users.length){
+                    console.log("All players connected, starting new round!")
+                    this.startNewRound();
+                }
+            }
+        });
+    }
 
 
     addUser(user){

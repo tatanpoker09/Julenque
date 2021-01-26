@@ -18,9 +18,6 @@ const dices = {
 }
 
 function Dice({number}) {
-
-
-
   return(
     <div className={'GameDice'}>
       <img className={'GameDiceImage'} src={dices[number]}/>

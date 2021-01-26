@@ -45,7 +45,11 @@ router.get("/:gameid/players", loadGame, function(req, res, next){
     const game = req.game;
     if(game) {
         const players = game.users;
-        res.status(200).send(players);
+        const response = [];
+        players.forEach((player)=>{
+            response.push({name: player.name});
+        })
+        res.status(200).send(response);
     } else {
         res.status(404).send("Game not found");
     }

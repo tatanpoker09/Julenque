@@ -28,14 +28,41 @@ function initializeWebsocket() {
         if(game_manager.games) {
             const game = game_manager.games[room_id];
             if(game) {
-                socket.join(room_id);
-                const player = new User(name);
-                player.setGameID(room_id);
-                game.addUser(player);
-                console.log(`${data.name} connected to ${data.roomId} with id: ${id}!`);
-                io.to(room_id).emit("player-join", name);
+                if (game.status==="LOBBY") { //If we're still in the lobby basically
+                    socket.join(room_id);
+                    const player = new User(name);
+                    socket.player = player;
+                    player.setGameID(room_id);
+                    game.addUser(player);
+                    console.log(`${data.name} connected to ${data.roomId} with id: ${id}!`);
+                    io.to(room_id).emit("player-join", name);
+                } else if(game.status==="STARTING") {
+                    console.log(`${data.name} connected to ${data.roomId} on game starting!`);
+                    game.userConnected(name, socket);
+                }
             }
         }
+
+        socket.on("disconnect", (reason)=>{
+            console.log(`User ${name} disconnected!`);
+            const game = game_manager.games[room_id];
+            if(game) {
+                game.users.forEach((player)=>player.name===name?player.connected=false:null);
+                //game.users.filter((player) => player.name !== name);
+                io.to(room_id).emit("player-leave", name);
+            }
+        });
+
+        socket.on('request-private-data', function(){
+            socket.user.sendPrivateData();
+        });
+
+
+        socket.on('game-start', function(socket){
+            console.log('received game-start! Will re-send')
+            game_manager.games[room_id].setStatus("STARTING");
+            io.to(room_id).emit("game-start");
+        });
     });
 
 

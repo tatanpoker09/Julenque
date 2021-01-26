@@ -58,7 +58,7 @@ class LanderPage extends React.Component{
           });
         });
       } else if(this.state.JoinCondition==='JoinGame'){
-        this.setState({LandingPageState: "Lobby"});
+        this.props.history.push(`/${this.state.code}?name=${this.state.name}`)
       }
     }
 

@@ -49,7 +49,6 @@ class Round {
     startRound(users){
         let publicUserData = [];
         users.forEach(user => {
-            user.sendPrivateData();
             const publicData = user.getPublicUserData();
             publicUserData.push(publicData);
         });

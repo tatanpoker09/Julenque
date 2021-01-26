@@ -2,9 +2,16 @@ import React from "react";
 import PlayerNameLobby from "./PlayerNameLobby";
 import {useLobby} from "../../services/websocketService";
 
-function Lobby({ handleCancel, handlePlay, code, name}) {
-    const {players} = useLobby(code, name);
+function Lobby({handlePlay, code, name}) {
+    const {players, sendGameStarting} = useLobby(code, name, handlePlay);
 
+    function onPlay(){
+        sendGameStarting();
+    }
+
+    function handleCancel(){
+
+    }
 
 
     if(players.length>0){
@@ -18,7 +25,7 @@ function Lobby({ handleCancel, handlePlay, code, name}) {
                     )}
                 </div>
                 
-                <button className={'Button LanderButton'} onClick={handlePlay}>Iniciar Juego</button>
+                <button className={'Button LanderButton'} onClick={onPlay}>Iniciar Juego</button>
                 <button className={'Button LanderButton'} onClick={handleCancel}>Salir</button>
             </div>
         );

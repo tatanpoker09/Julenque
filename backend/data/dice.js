@@ -8,21 +8,27 @@ class Dice{
 
     /**
      * Returns an array with two random numbers between 1 and 6.
-     * @returns {{dices: [int]}}
+     * @returns [int]
      */
     rollDice(amount){
         let dice_array = [];
         for (let i = 0; i < amount; i++) {
-            const dice_value = this.getRandomArbitrary(1,7);
+            const dice_value = this.getRandomInt(1,6);
             dice_array.push(dice_value);
         }
-        return {"dices": dice_array};
+        return dice_array;
     }
     /**
-     * Returns a random number between min (inclusive) and max (exclusive)
+     * Returns a random integer between min (inclusive) and max (inclusive).
+     * The value is no lower than min (or the next integer greater than min
+     * if min isn't an integer) and no greater than max (or the next integer
+     * lower than max if max isn't an integer).
+     * Using Math.round() will give you a non-uniform distribution!
      */
-    getRandomArbitrary(min, max) {
-        return Math.random() * (max - min) + min;
+    getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 }
 
