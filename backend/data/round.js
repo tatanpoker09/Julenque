@@ -55,8 +55,10 @@ class Round {
 
         users.forEach( user => {
             user.sendPublicData(publicUserData);
+            user.sendStartingUser(this.currentUserTurn.name);
         });
         this.status = "STARTED";
+
     }
 
     /**

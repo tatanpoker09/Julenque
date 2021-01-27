@@ -90,7 +90,19 @@ export const useGame = (code, name) => {
                 players.forEach((player)=>{
                    if(player.name===data.privateData.name){
                        player.dices = {dice1: data.privateData.dice[0], dice2: data.privateData.dice[1]};
+                       player.powerups = data.privateData.powerups;
                    }
+                });
+                return players;
+            });
+        });
+
+        socketRef.current.on('round-start', (data)=>{
+            setPlayers((players)=>{
+                players.forEach((player)=>{
+                    if(player.name===data){
+                        player.currentTurn = true;
+                    }
                 });
                 return players;
             });

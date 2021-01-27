@@ -26,21 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e4d7a95f-1e3f-4242-9ec2-ff1a5be9d918" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/websocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/websocket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/dice.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/dice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/data/round.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/round.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/data/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/Dice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Game/Dice.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/Game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Game/Game.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainBoard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Game/MainBoard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/PlayerName.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Game/PlayerName.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/LanderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LanderPage/LanderPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/Lobby.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LanderPage/Lobby.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayerOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayerOptions.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/services/websocketService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/websocketService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +159,8 @@
       <workItem from="1609099396146" duration="1947000" />
       <workItem from="1611537395887" duration="2883000" />
       <workItem from="1611540330665" duration="21403000" />
-      <workItem from="1611625645231" duration="19594000" />
+      <workItem from="1611625645231" duration="19651000" />
+      <workItem from="1611704897584" duration="4889000" />
     </task>
     <servers />
   </component>

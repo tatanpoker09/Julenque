@@ -18,6 +18,10 @@ module.exports = class User {
         this.lastDecision = decision;
     }
 
+    sendStartingUser(starting_user){
+        this.socket.emit('round-start', starting_user);
+    }
+
     /**
      * Wins means the user challenged has won, aka this user specifically.
      * El dudado.

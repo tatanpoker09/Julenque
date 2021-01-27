@@ -2,15 +2,15 @@ import React from "react";
 
 
 
-function MainPlayerOptions() {
+function MainPlayerOptions({powerups}) {
 
 
 
   return(
     <div className={'MainPlayerOptions'}>
-      <button className={'Button Options'}> Julenque </button>
-      <button className={'Button Options'}> Aleatorio </button>
-      <button className={'Button Options'}> Paso </button>
+      <button className={'Button Options'} disabled={powerups.julenque}> Julenque </button>
+      <button className={'Button Options'} disabled={powerups.reroll}> Aleatorio </button>
+      <button className={'Button Options'} disabled={powerups.pass}> Paso </button>
       <button className={'Button Options'}> Reportar </button>
     </div>
 
