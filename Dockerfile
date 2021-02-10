@@ -8,7 +8,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 RUN npm install
 # add app
-COPY . ./
+COPY frontend ./
 
 EXPOSE 3001
 

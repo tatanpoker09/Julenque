@@ -25,11 +25,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d7a95f-1e3f-4242-9ec2-ff1a5be9d918" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Game/JulenqueBoard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/JulenqueGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/round.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/round.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayerOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayerOptions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/websocketService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/websocketService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/websocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/websocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-with-reloading.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-with-reloading.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Dado1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Dado1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Dado2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Dado2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Dado3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Dado3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Dado4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Dado4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Dado5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Dado5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Dado6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Dado6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/DadoNull.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/DadoNull.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Exit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/Dice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Dice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/Game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Game.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainBoard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/MainBoard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/MainPlayer/MainPlayer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayerBoard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/MainPlayer/MainPlayerBoard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayerName.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/MainPlayer/MainPlayerName.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/MainPlayerOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/MainPlayer/MainPlayerOptions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/MainPlayer/ValueSelector.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/MainPlayer/ValueSelector.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/NameInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/NameInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game/PlayerName.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/PlayerName.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/LanderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanderPage/LanderPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/LanderPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanderPage/LanderPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/Lobby.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanderPage/Lobby.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/PlayerNameLobby.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanderPage/PlayerNameLobby.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/README.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanderPage/README.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LanderPage/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanderPage/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Room/RoomView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Room/RoomView.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/config/betValues.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/betValues.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/config/generalValues.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/generalValues.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/roomService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/roomService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/websocketService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/websocketService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +111,28 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-compose.yml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\tatan\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.5233.80\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Julenque" />
+      <recent name="D:\Programming\Julenque\src" />
+      <recent name="D:\Programming\Julenque\backup" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Julenque\server" />
+      <recent name="D:\Programming\Julenque\lib" />
       <recent name="C:\Users\tatan\Documents\Programming\julenque" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Unnamed">
+  <component name="RunManager" selected="npm.Run Express">
     <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -91,7 +154,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Frontend" type="js.build_tools.npm">
-      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -100,8 +163,8 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Run Dev normal" type="js.build_tools.npm">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="Run Express" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/backend/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -110,11 +173,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Run Dev" type="js.build_tools.npm">
+    <configuration name="Run Server" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev" />
+        <script value="server" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -143,12 +206,27 @@
     <list>
       <item itemvalue="Docker.Unnamed" />
       <item itemvalue="npm.Swagger Generate Docs" />
-      <item itemvalue="npm.Run Dev" />
-      <item itemvalue="npm.Run Dev normal" />
+      <item itemvalue="npm.Run Express" />
+      <item itemvalue="npm.Run Server" />
       <item itemvalue="npm.Frontend" />
     </list>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e4d7a95f-1e3f-4242-9ec2-ff1a5be9d918" name="Default Changelist" comment="" />
@@ -161,62 +239,84 @@
       <workItem from="1611540330665" duration="21403000" />
       <workItem from="1611625645231" duration="19651000" />
       <workItem from="1611704897584" duration="4889000" />
+      <workItem from="1612714264137" duration="1512000" />
+      <workItem from="1612761630181" duration="7325000" />
+      <workItem from="1612985704641" duration="1177000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611626194516">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="488" y="153" key="#Run_Server" timestamp="1612813349631">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="488" y="153" key="#Run_Server/0.0.1536.864@0.0.1536.864" timestamp="1612813349631" />
+    <state x="331" y="145" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612837002374">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="331" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1612837002374" />
     <state x="414" y="175" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611626194516" />
     <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611437901943" />
+    <state x="281" y="26" key="CommitChangelistDialog2" timestamp="1612986924132">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="281" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1612986924132" />
+    <state x="147" y="68" key="DiffContextDialog" timestamp="1612986917307">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="147" y="68" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1612986917307" />
     <state x="798" y="436" key="DockerComposeFileDialog" timestamp="1611626173478">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="436" key="DockerComposeFileDialog/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611626173478" />
-    <state x="910" y="314" key="FileChooserDialogImpl" timestamp="1611626172260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="728" y="261" key="FileChooserDialogImpl" timestamp="1612761652571">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="728" y="261" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1612761652571" />
     <state x="910" y="314" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611626172260" />
-    <state width="1882" height="282" key="GridCell.Tab.0.bottom" timestamp="1611562639999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="223" key="GridCell.Tab.0.bottom" timestamp="1612837139426">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1612837139426" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.56.1280.984@0.0.1920.1040" timestamp="1610148541265" />
     <state width="1882" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611562639999" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611450494229" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1611469015722" />
-    <state width="1882" height="282" key="GridCell.Tab.0.center" timestamp="1611562639999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="223" key="GridCell.Tab.0.center" timestamp="1612837139426">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1612837139426" />
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.56.1280.984@0.0.1920.1040" timestamp="1610148541265" />
     <state width="1882" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611562639999" />
     <state width="1899" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611450494228" />
     <state width="1899" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1611469015722" />
-    <state width="1882" height="282" key="GridCell.Tab.0.left" timestamp="1611562639999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="223" key="GridCell.Tab.0.left" timestamp="1612837139426">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1612837139426" />
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.56.1280.984@0.0.1920.1040" timestamp="1610148541265" />
     <state width="1882" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611562639999" />
     <state width="1899" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611450494228" />
     <state width="1899" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1611469015721" />
-    <state width="1882" height="282" key="GridCell.Tab.0.right" timestamp="1611562639999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="223" key="GridCell.Tab.0.right" timestamp="1612837139426">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1515" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1612837139426" />
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.56.1280.984@0.0.1920.1040" timestamp="1610148541265" />
     <state width="1882" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611562639999" />
     <state width="1899" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611450494229" />
@@ -233,9 +333,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="0" width="1396" height="717" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611560728492" />
-    <state x="948" y="175" width="585" height="592" key="find.popup" timestamp="1611651625897">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="758" y="145" width="611" height="526" key="find.popup" timestamp="1612986620059">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="758" y="145" width="611" height="526" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1612986620059" />
     <state x="948" y="175" width="585" height="592" key="find.popup/0.0.1920.1040/1920.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611651625897" />
     <state x="948" y="175" width="585" height="592" key="find.popup/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611450759495" />
     <state x="2868" y="175" width="585" height="592" key="find.popup/1920.0.1920.1040/-1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1611439526026" />

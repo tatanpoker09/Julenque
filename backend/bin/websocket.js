@@ -1,3 +1,5 @@
+import { LobbyClient } from 'boardgame.io/client';
+
 const game_manager = require("../data/game_manager");
 const User = require("../data/user");
 
@@ -58,10 +60,16 @@ function initializeWebsocket() {
         });
 
 
-        socket.on('game-start', function(socket){
-            console.log('received game-start! Will re-send')
+        socket.on('game-start', async function(socket){
+            console.log('received game-start! Will re-send');
+            //We add everyone onto a room.
+
+
+            const lobbyClient = new LobbyClient({ server: 'http://localhost:8080' });
+            const {matchID} = await lobbyClient.createMatch('Julenque', {numPlayers: game_manager.games[room_id].users.length});
+
             game_manager.games[room_id].setStatus("STARTING");
-            io.to(room_id).emit("game-start");
+            io.to(room_id).emit("game-start", {matchID: matchID});
         });
     });
 

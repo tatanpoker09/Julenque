@@ -3,7 +3,7 @@ version: "3.1"
 services:
   backend:
     container_name: julenque-backend
-    build: ./backend
+    build: backend
 
   frontend:
     build:

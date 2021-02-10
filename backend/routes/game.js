@@ -1,4 +1,4 @@
-const game_manager = require("../data/game_manager");
+const    game_manager = require("../data/game_manager");
 const User = require("../data/user");
 var express = require('express');
 var router = express.Router();

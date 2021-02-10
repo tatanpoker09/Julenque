@@ -7,7 +7,9 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
+    "boardgame.io": "^0.43.2",
     "bootstrap": "^4.5.3",
+    "esm": "^3.2.25",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.3",
@@ -23,7 +25,8 @@
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node -r esm server/server.js"
   },
   "eslintConfig": {
     "extends": "react-app"

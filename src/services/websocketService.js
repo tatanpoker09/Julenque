@@ -2,6 +2,9 @@
 import {io} from "socket.io-client";
 import {useEffect, useRef, useState} from "react";
 import {getPlayers} from "./roomService";
+
+import { LobbyClient } from 'boardgame.io/client';
+
 const ENDPOINT = "https://localhost";
 const PLAYER_CONNECTED_EVENT = "player-join";
 const PLAYER_DISCONNECTED_EVENT = "player-leave";
@@ -32,7 +35,19 @@ export const useLobby = (code, name, handlePlay) =>{
             setPlayers((players)=>players.filter(item=>item.name!==name));
         });
 
-        socketRef.current.on(GAME_STARTING_EVENT, ()=>{
+        socketRef.current.on(GAME_STARTING_EVENT, async (data)=>{
+            const matchID = data.matchID;
+            //We join the match.
+            const lobbyClient = new LobbyClient({ server: 'http://localhost:8000' });
+            //todo save playerCredentials.
+            const { playerCredentials } = await lobbyClient.joinMatch(
+                'Julenque',
+                matchID,
+                {
+                    playerID: name,
+                    playerName: name,
+                }
+            );
             handlePlay();
         });
 
@@ -99,10 +114,14 @@ export const useGame = (code, name) => {
 
         socketRef.current.on('round-start', (data)=>{
             setPlayers((players)=>{
+                return players;
+            });
+        });
+
+        socketRef.current.on('turn-start', (usernameStarter)=>{
+            setPlayers((players)=>{
                 players.forEach((player)=>{
-                    if(player.name===data){
-                        player.currentTurn = true;
-                    }
+                    player.currentTurn = player.name === usernameStarter; //This will set each player to false except the one who's turn started.
                 });
                 return players;
             });
