@@ -1,4 +1,0 @@
-const INITIAL_HEALTH = 6;
-const ROUND_HEALTH_LOSS = 1;
-
-module.exports = {INITIAL_HEALTH, ROUND_HEALTH_LOSS};

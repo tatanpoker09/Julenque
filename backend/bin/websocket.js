@@ -1,4 +1,6 @@
-import { LobbyClient } from 'boardgame.io/client';
+const {LOBBY_API_PORT, SOCKET_PORT} = require("../../constants");
+
+const  {LobbyClient} = require('boardgame.io/client');
 
 const game_manager = require("../data/game_manager");
 const User = require("../data/user");
@@ -7,7 +9,7 @@ let io;
 
 function initializeWebsocket() {
     return new Promise((resolve, reject)=>{
-    io = require('socket.io')(5000, {
+    io = require('socket.io')(SOCKET_PORT, {
         path: '/backend',
         handlePreflightRequest: (req, res) => {
             const headers = {
@@ -65,7 +67,7 @@ function initializeWebsocket() {
             //We add everyone onto a room.
 
 
-            const lobbyClient = new LobbyClient({ server: 'http://localhost:8080' });
+            const lobbyClient = new LobbyClient({ server: `http://localhost:${LOBBY_API_PORT}` });
             const {matchID} = await lobbyClient.createMatch('Julenque', {numPlayers: game_manager.games[room_id].users.length});
 
             game_manager.games[room_id].setStatus("STARTING");

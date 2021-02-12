@@ -5,14 +5,14 @@ export function createNewRoom(name){
 }
 
 function axiosPost(url, body, params){
-    let BACKEND_HOST = "http://localhost:3000";
+    let BACKEND_HOST = "http://localhost:5378";
     return axios.post(`${BACKEND_HOST}${url}`, body, {params: {params}});
 }
 
 export function joinRoom(code, name){
 }
 function axiosGet(url, params){
-    let BACKEND_HOST = "http://localhost:3000";
+    let BACKEND_HOST = "http://localhost:5378";
     return axios.get(`${BACKEND_HOST}${url}`, {params: {params}});
 }
 

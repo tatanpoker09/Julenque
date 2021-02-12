@@ -4,6 +4,10 @@ import Game from './components/Game/Game';
 import {useLocation, useParams} from "react-router";
 import Lobby from "./components/LanderPage/Lobby";
 import NameInput from "./components/Game/NameInput";
+import {Client} from "boardgame.io/react";
+import {Julenque} from "./lib/JulenqueGame";
+import {SocketIO} from "boardgame.io/multiplayer";
+import {BOARDGAME_SERVER_PORT} from "./constants_frontend";
 
 function Room() {
     let {game} = useParams();
@@ -19,14 +23,19 @@ function Room() {
     function enterName(nameInput){
         setName(nameInput);
     }
-
-  return (
-      name?
-      started?
-        <Game code={game} name={name}/>
-      : <Lobby handlePlay={()=>setStarted(true)} code={game} name={name}/>
-      : <NameInput enterName={enterName}/>
-  );
+    if(!name){
+        return <NameInput enterName={enterName}/>
+    } else if(!started){
+        return <Lobby handlePlay={()=>setStarted(true)} code={game} name={name}/>
+    } else {
+        const App = Client({
+            game: Julenque,
+            numPlayers: 6,
+            multiplayer: SocketIO({ server: `localhost:${BOARDGAME_SERVER_PORT}` }),
+            board: Game({game, name}),
+        });
+        return <App/>
+    }
 }
 
 export default Room;

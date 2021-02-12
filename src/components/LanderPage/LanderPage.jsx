@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Readme from "./README";
 import {CODE_LENGTH, MAX_NAME_LENGTH} from '../../config/generalValues.json';
-import Lobby from "./Lobby";
 import {createNewRoom, joinRoom} from "../../services/roomService";
 
 import "./LanderPage.scss"

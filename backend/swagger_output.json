@@ -5,7 +5,7 @@
     "title": "Julenque Backend API Documentation",
     "description": "Documentation for the backend endpoints of the popular southern chilean game Julenque."
   },
-  "host": "localhost:3000",
+  "host": "localhost:5378",
   "basePath": "/",
   "tags": [
     {

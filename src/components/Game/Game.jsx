@@ -11,7 +11,6 @@ function Game({code, name}) {
 
     const {players} = useGame(code, name);
 
-
     function onRoundStart(){
 
     }

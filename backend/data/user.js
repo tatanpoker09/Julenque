@@ -1,4 +1,4 @@
-const {INITIAL_HEALTH} = require("./constants");
+const {INITIAL_HEALTH} = require("../../constants");
 const {Dice} = require("./dice");
 const round = require("./round");
 

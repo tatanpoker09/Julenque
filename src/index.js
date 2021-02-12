@@ -11,7 +11,7 @@ import './App.scss';
 
 
 import LanderPage from "./components/LanderPage/LanderPage";
-import JulenqueClient from "./components/Game/JulenqueBoard";
+import JulenqueClient from "./components/Game/JulenqueClient";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -24,7 +24,7 @@ ReactDOM.render(
           <div className="main">
               <Switch>
                   <Route exact path={"/lobby"} component={LanderPage}/>
-                  <Route path={"/:game"} component={JulenqueClient}/>
+                  <Route path={"/:game"} component={Room}/>
               </Switch>
           </div>
       </div>

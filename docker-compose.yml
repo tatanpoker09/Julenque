@@ -7,7 +7,7 @@ services:
       CHOKIDAR_USEPOLLING: "true"
     build: backend
     ports:
-      - 3000:3000
+      - 5378:5378
     volumes:
       - ./backend:/code
     restart: always
@@ -22,7 +22,7 @@ services:
       BACKEND_HOST: backend
       CHOKIDAR_USEPOLLING: "true"
     build:
-      context: ./frontend
+      context: ./
       dockerfile: Dockerfile
     container_name: julenque-frontend
     restart: always
@@ -31,7 +31,7 @@ services:
     links:
       - "backend:localhost"
     ports:
-      - 3001:3001
+      - 5379:5379
 
     volumes:
       - /app/node_modules

@@ -1,4 +1,4 @@
-const {ROUND_HEALTH_LOSS} = require("./constants");
+const {ROUND_HEALTH_LOSS} = require("../../constants");
 
 class Round {
     constructor(roundId, startingUser, userCount) {
